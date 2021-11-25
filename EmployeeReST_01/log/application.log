@@ -23,3 +23,39 @@
 24-11-2021 14:40:14 WARN  com.cov.service.EmployeeService:65 -com.cov.exception.InvalidEmployeeIdException: Employee id not found 
 24-11-2021 14:40:14 INFO  com.cov.exception.GlobalExceptionHandler:29 -status : 404 NOT_FOUND 
 24-11-2021 14:40:14 INFO  com.cov.exception.GlobalExceptionHandler:30 -message : Employee id2does not exist in repository 
+24-11-2021 16:49:13 INFO  com.cov.controller.EmployeeController:36 -finding all employees 
+24-11-2021 16:49:13 INFO  com.cov.service.EmployeeService:23 -finding all employees 
+24-11-2021 16:49:45 INFO  com.cov.controller.EmployeeController:42 -inserting a employee with Chaitanya Bharathi 
+24-11-2021 16:49:45 INFO  com.cov.service.EmployeeService:43 -Inserting a new employee 
+24-11-2021 16:49:45 WARN  com.cov.service.EmployeeService:45 -com.cov.exception.InvalidEmployeeIdException: Employee id not found 
+24-11-2021 16:50:45 INFO  com.cov.controller.EmployeeController:42 -inserting a employee with Chaitanya Bharathi 
+24-11-2021 16:50:45 INFO  com.cov.service.EmployeeService:43 -Inserting a new employee 
+24-11-2021 16:50:45 WARN  com.cov.service.EmployeeService:45 -com.cov.exception.InvalidEmployeeIdException: Employee id not found 
+24-11-2021 16:56:44 INFO  com.cov.controller.EmployeeController:42 -inserting a employee with Chaitanya Bharathi 
+24-11-2021 16:56:44 INFO  com.cov.service.EmployeeService:43 -Inserting a new employee 
+24-11-2021 16:56:44 WARN  com.cov.service.EmployeeService:45 -com.cov.exception.InvalidEmployeeIdException: Employee id not found 
+24-11-2021 16:57:05 INFO  com.cov.controller.DepartmentController:42 -inserting a department with Chaitanya Bharathi 
+24-11-2021 16:57:05 INFO  com.cov.service.DepartmentService:44 -Inserting a new department 
+24-11-2021 16:57:05 WARN  com.cov.service.DepartmentService:46 -com.cov.exception.InvalidDepartmentIdException: Department id not found 
+24-11-2021 16:58:41 INFO  com.cov.controller.EmployeeController:48 -editing a employee with Chaitanya Bharathi 
+24-11-2021 16:58:41 INFO  com.cov.service.EmployeeService:50 -Updating employee details   
+24-11-2021 16:58:41 WARN  com.cov.service.EmployeeService:53 -com.cov.exception.InvalidEmployeeIdException: Employee id not found 
+24-11-2021 16:58:41 INFO  com.cov.exception.GlobalExceptionHandler:29 -status : 404 NOT_FOUND 
+24-11-2021 16:58:41 INFO  com.cov.exception.GlobalExceptionHandler:30 -message : Employee id2does not exist in repository 
+24-11-2021 16:58:55 INFO  com.cov.controller.EmployeeController:48 -editing a employee with Chaitanya Bharathi 
+24-11-2021 16:58:55 INFO  com.cov.service.EmployeeService:50 -Updating employee details   
+24-11-2021 16:58:55 WARN  com.cov.service.EmployeeService:53 -com.cov.exception.InvalidEmployeeIdException: Employee id not found 
+24-11-2021 16:58:55 INFO  com.cov.service.EmployeeService:57 -Employee updated is5 Chaitanya Bharathi 
+24-11-2021 16:59:20 INFO  com.cov.controller.DepartmentController:48 -editing a department with Chaitanya Bharathi 
+24-11-2021 16:59:20 INFO  com.cov.service.DepartmentService:51 -Updating departments   
+24-11-2021 16:59:21 WARN  com.cov.service.DepartmentService:54 -com.cov.exception.InvalidDepartmentIdException: Department id not found 
+24-11-2021 16:59:21 INFO  com.cov.exception.GlobalExceptionHandler:40 -status : 404 NOT_FOUND 
+24-11-2021 16:59:21 INFO  com.cov.exception.GlobalExceptionHandler:41 -message : Department Id5not existing in reposiotory 
+24-11-2021 17:01:36 INFO  com.cov.controller.EmployeeController:36 -finding all employees 
+24-11-2021 17:01:36 INFO  com.cov.service.EmployeeService:23 -finding all employees 
+25-11-2021 10:19:11 INFO  com.cov.controller.EmployeeController:36 -finding all employees 
+25-11-2021 10:19:11 INFO  com.cov.service.EmployeeService:23 -finding all employees 
+25-11-2021 10:41:13 INFO  com.cov.controller.EmployeeController:36 -finding all employees 
+25-11-2021 10:41:13 INFO  com.cov.service.EmployeeService:23 -finding all employees 
+25-11-2021 10:42:21 INFO  com.cov.controller.EmployeeController:36 -finding all employees 
+25-11-2021 10:42:21 INFO  com.cov.service.EmployeeService:23 -finding all employees 
