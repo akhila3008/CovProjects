@@ -12,16 +12,26 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.cov.beans.Department;
 import com.cov.beans.Employee;
 import com.cov.exception.InvalidEmployeeIdException;
 import com.cov.service.EmployeeService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+
+@Api(value = "API to perform operations on Employee", description = "This API provides capability to perform CRUD operations on Employee")
 @RestController
 @RequestMapping("/employee")
 public class EmployeeController {
 	static Logger logger = Logger.getLogger(EmployeeController.class);
 	@Autowired
 	EmployeeService employeeService;
+
+	@ApiOperation(value = "Search  for a single employee based on the provided ID", response = Employee.class, produces = "application/xml")
 
 	@GetMapping("/{id}")
 	public Employee find(@PathVariable int id) throws InvalidEmployeeIdException {
@@ -31,17 +41,26 @@ public class EmployeeController {
 		return employee;
 	}
 
+	@ApiOperation(value = "Search for all the Employees", produces = "application/xml")
+
+	@ApiResponses(value = { @ApiResponse(code = 200, message = "Successfully retrived all the Employees"),
+			@ApiResponse(code = 401, message = "You are not authorized to use the repository"),
+			@ApiResponse(code = 403, message = "You are forbidden to access the resources"),
+			@ApiResponse(code = 404, message = "The resource you are trying to reach is not found") })
 	@GetMapping()
 	public List<Employee> findAll() {
 		logger.info("finding all employees");
 		return employeeService.findAll();
 	}
 
+	@ApiOperation(value = "Insert a new employee", produces = "application/xml")
 	@PostMapping()
 	public Employee insertPerson(@RequestBody Employee employee) {
 		logger.info("inserting a employee with " + employee.getName());
 		return employeeService.save(employee);
 	}
+
+	@ApiOperation(value = "Edit and update details of the employee", produces = "application/xml")
 
 	@PutMapping()
 	public Employee edit(@RequestBody Employee employee) throws InvalidEmployeeIdException {
@@ -49,6 +68,7 @@ public class EmployeeController {
 		return employeeService.update(employee);
 	}
 
+	@ApiOperation(value = "Delete an employee", produces = "application/xml")
 	@DeleteMapping("/{id}")
 	public Employee delete(@PathVariable int id) throws InvalidEmployeeIdException {
 		logger.info("deleting a employee with id " + id);
